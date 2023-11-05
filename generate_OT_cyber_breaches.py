@@ -38,14 +38,13 @@ companies:
 
 industrial_protocols:
   - Modbus
-  - Profibus
   - EtherNet/IP
   - Profinet
-  - Fieldbus
   - HART
   - OPC
   - DNP3
-  - CAN
+  - MQTT
+  - LORAWAN
 
 industrial_firewall_and_security_devices:
   - Cisco
@@ -57,6 +56,14 @@ industrial_firewall_and_security_devices:
   - Palo Alto
   - Fortinet
   - Check Point
+  
+operating_systems:
+  - Windows XP
+  - Windows 10
+  - Windows Server
+  - RHEL
+  - Debian
+  - OS X
 """
 
 search_terms = yaml.load(search_terms, Loader=yaml.FullLoader)
